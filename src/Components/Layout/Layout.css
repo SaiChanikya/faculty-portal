@@ -40,13 +40,6 @@
     margin-bottom: 20px;
 }
 
-.content-container {
-    padding: 40px 10px 40px 40px;
-    margin: 0;
-    overflow: hidden;
-    border: 1px solid #d7d7dc;
-}
-
 .logo {
     float: left;
     color: black;

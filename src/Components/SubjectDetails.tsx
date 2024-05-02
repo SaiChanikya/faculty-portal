@@ -37,7 +37,8 @@ function SubjectDetails() {
                 return <>
                     <InputNumber key={record.uid}
                         min={1}
-                        max={10}
+                        max={5}
+                        maxLength={4}
                         {...commonInputNumberProps}
                         onChange={(value) => {
                             setUsers(users.map((user: any) => {
@@ -52,7 +53,7 @@ function SubjectDetails() {
                                 }
                             }))
                         }}
-                    /> / 10 </>
+                    /> / 5 </>
             }
         }
     ];

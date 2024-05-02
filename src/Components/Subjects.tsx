@@ -37,7 +37,7 @@ function Subjects() {
         },
         {
             title: 'Actions',
-            render: (text: any, record: any) => <Button type="primary" onClick={() => history.push(`/subjects/${record.id}`)}>Add Marks</Button>
+            render: (text: any, record: any) => <Button type="primary" onClick={() => history.push(`/subjects/${record.id}`)}>Add Credits</Button>
         }
     ];
 

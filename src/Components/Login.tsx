@@ -99,11 +99,11 @@ function Login() {
             }}
         >
             <div id="login-container">
-                <div style={{ fontWeight: "500", fontSize: "35px", paddingTop: '35px' }}>
-                    Faculty Portal
+                <div style={{ paddingTop: '35px' }}>
+                    <img src={window.location.origin + "/faculty/Login.png"} width={"60%"} />
                 </div>
 
-                <div className="heading"></div>
+                <div className="heading"><span>Faculty Portal</span></div>
 
                 <div style={{ color: 'red', textAlign: 'center', position: 'relative', top: '23px' }} >
                     {errorMessage}

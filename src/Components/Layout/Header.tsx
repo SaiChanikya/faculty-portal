@@ -47,7 +47,6 @@ function AppMainHeader(props: any) {
                 <HomeOutlined onClick={() => history.push("/home")} />&nbsp;
                 Faculty Portal
             </div>
-
             <Menu className="border-bottom-0" theme="light" mode="horizontal"
                 items={[]}
             />

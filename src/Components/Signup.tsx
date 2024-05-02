@@ -9,7 +9,7 @@ import ApiUrls from "../ApiUrls";
 export const commonInputNumberProps = {
     onKeyUp: ((event: any) => {
         let value = event.target.value
-        if (!/[a-zA-z,?><./'"|=+)(*&^%$#@!~`{});:]/.test(event.target.value)) {
+        if (!/[a-zA-z,?></'"|=+)(*&^%$#@!~`{});:]/.test(event.target.value)) {
             if (value !== "") {
                 if (event.target.ariaValueMax !== null && String(value).length >= event.target.ariaValueMax.length && value > Number(event.target.ariaValueMax)) {
                     value = event.target.ariaValueMax
