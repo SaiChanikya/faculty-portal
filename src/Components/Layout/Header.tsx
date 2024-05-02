@@ -45,7 +45,7 @@ function AppMainHeader(props: any) {
         <Header className={"header"}>
             <div style={{ "fontSize": "30px", fontWeight: "600" }}>
                 <HomeOutlined onClick={() => history.push("/home")} />&nbsp;
-                Student Portal
+                Faculty Portal
             </div>
 
             <Menu className="border-bottom-0" theme="light" mode="horizontal"
