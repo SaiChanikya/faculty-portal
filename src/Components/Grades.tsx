@@ -36,7 +36,7 @@ function Grades() {
             title: 'Grades',
             dataIndex: 'grades',
             width: '10%',
-            render: (text: any, record: any) => <>{record.grades} / 10</>
+            render: (text: any, record: any) => <>{record.grades} / 5</>
         }
     ]
 

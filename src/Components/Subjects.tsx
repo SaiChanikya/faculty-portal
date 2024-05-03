@@ -44,10 +44,13 @@ function Subjects() {
     console.log(subjects)
 
     useEffect(() => {
+        console.log(courseName);
         ApiService.get(Urls.getSubjectsByCourse(courseName))
             .then((data: any) => {
-                console.log(data)
-                setSubjects(data)
+                if (data?.["error"] !== "No subjects found for course Biomedical Engineering.") {
+                    console.log(data)
+                    setSubjects(data)
+                }
             })
     }, [])
 

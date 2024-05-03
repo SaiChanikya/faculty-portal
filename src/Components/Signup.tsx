@@ -53,7 +53,6 @@ function Signup() {
 
     useEffect(() => {
         setButtonLoading(false);
-        localStorage.removeItem('switch_account');
     }, [])
 
     const validateEmail = () => {
@@ -71,9 +70,12 @@ function Signup() {
         ApiService.post(ApiUrls.signup, payload)
             .then(data => {
                 if (!data.error) {
-                    localStorage.setItem("email", email)
-                    localStorage.setItem("password", password)
-                    history.push('/home')
+                    if (data?.["message"] === "User record created successfully") {
+                        localStorage.setItem("email", email)
+                        localStorage.setItem("password", password)
+                        localStorage.setItem("course_name", course)
+                        history.push('/home')
+                    }
                 }
                 else {
                     setErrorMessage(`${data.error}, login failed due to an internal error`);
